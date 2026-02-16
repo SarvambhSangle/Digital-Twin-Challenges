@@ -1,0 +1,107 @@
+{UTF-8}
+Contact Rate=5
+	~	1/Day
+	~		|
+
+Infected Population= INTEG (Infected Rate,
+		1)
+	~	Person
+	~		|
+
+Infected Rate=Infected Population * Contact Rate * Infectivity * (Susceptible Population\
+		 / Total Population)
+	~	Person/Day
+	~		|
+
+Infectivity=0.1
+	~	Dmnl
+	~		|
+
+Susceptible Population= INTEG (-Infected Rate,
+		999)
+	~	Person
+	~		|
+
+Total Population=1000
+	~	Person
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Day
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Day
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Day [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 0.0625
+	~	Day [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,100,2
+10,1,Susceptible Population,265,79,56,37,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,2,Infected Population,516,80,55,38,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,3,5,1,100,0,0,22,0,192,0,-1--1--1,,1|(352,79)|
+1,4,5,2,4,0,0,22,0,192,0,-1--1--1,,1|(428,79)|
+11,5,0,389,79,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,6,Infected Rate,389,103,49,16,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,7,Contact Rate,263,265,49,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,8,Infectivity,394,268,46,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,9,Total Population,542,262,61,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,10,2,6,1,0,0,0,0,192,0,-1--1--1,,1|(472,132)|
+1,11,1,6,1,0,0,0,0,192,0,-1--1--1,,1|(338,142)|
+1,12,7,6,1,0,0,0,0,192,0,-1--1--1,,1|(338,198)|
+1,13,8,6,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,14,9,6,1,0,0,0,0,192,0,-1--1--1,,1|(442,189)|
+///---\\\
+:L<%^E!@
+1:current.vdfx
+4:Time
+5:Infected Rate
+9:current
+19:100,0
+24:0
+25:100
+26:100
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Vensim Sans|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
