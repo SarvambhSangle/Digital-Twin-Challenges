@@ -11,3 +11,10 @@ Stock: Water Volume.
 Inflow: Constant Tap Flow.
 Outflow: Leakage Rate (proportional to Water Volume).
 Challenge: Find the "Steady State" where the inflow equals the outflow.
+
+3. Population Dynamics (The Birth-Death Loop)
+The Scenario: A city population grows based on a birth rate (percentage of the population) and declines based on a death rate.
+Stock: Population.
+Inflow: Births.
+Outflow: Deaths.
+Challenge: Model what happens when the birth rate is slightly higher than the death rate versus when it is lower.
