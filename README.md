@@ -19,9 +19,4 @@ Inflow: Births.
 Outflow: Deaths.
 Challenge: Model what happens when the birth rate is slightly higher than the death rate versus when it is lower.
 
-4. Coffee Cooling (Newton’s Law of Cooling)
-The Scenario: A hot cup of coffee sits in a room. The rate at which the coffee cools depends on the temperature difference between the coffee and the room.
-Stock: Coffee Temperature.
-Outflow: Cooling Rate.
-Constant: Ambient Room Temperature.
-Challenge: Model the "Goal Seeking" behavior where the coffee temperature asymptotically approaches the room temperature.
+4. Academic Research & Publication Cycle: Model the flow of "Research Ideas" into "Manuscripts" and finally into "Published Papers," including the significant time delays of the "Peer Review" process and its impact on a researcher's "Knowledge" stock.
