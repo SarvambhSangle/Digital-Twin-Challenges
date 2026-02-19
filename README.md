@@ -20,3 +20,6 @@ Outflow: Deaths.
 Challenge: Model what happens when the birth rate is slightly higher than the death rate versus when it is lower.
 
 4. Academic Research & Publication Cycle: Model the flow of "Research Ideas" into "Manuscripts" and finally into "Published Papers," including the significant time delays of the "Peer Review" process and its impact on a researcher's "Knowledge" stock.
+
+5.  Tourism Overload (Over tourism): Model how the reinforcing loop of "City Popularity" leads to a stock of "Tourists" that eventually triggers a balancing loop of "Infrastructure Strain" and "Environmental Decay," lowering the city's future appeal.
+
