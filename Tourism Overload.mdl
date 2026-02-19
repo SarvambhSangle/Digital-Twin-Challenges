@@ -1,0 +1,169 @@
+{UTF-8}
+Arrival Rate=Tourist Population * (City Popularity / 100)
+	~	Person/Month
+	~		|
+
+Average Stay Duration=0.25
+	~	Month
+	~		|
+
+City Infrastructure= INTEG (Infrastructure Investment,
+		1000)
+	~	Unit
+	~		|
+
+City Popularity=(Environmental Quality * 0.7) / (Crowding Pressure + 0.1)
+	~	Dmnl
+	~		|
+
+Crowding Pressure=Tourist Population/City Infrastructure
+	~	Person/Unit
+	~		|
+
+Decay Factor=MAX(0, Crowding Pressure - Sustainability Threshold)
+	~	Dmnl
+	~		|
+
+Departure Rate=Tourist Population / Average Stay Duration
+	~	Person/Month
+	~		|
+
+Desired Infrastructure=2000
+	~	
+	~		|
+
+Environmental Decay=Tourist Population * 0.01
+	~	Index/Month
+	~		|
+
+Environmental Quality= INTEG (-Environmental Decay,
+		100)
+	~	Quality Index
+	~		|
+
+Infrastructure Investment=(Desired Infrastructure - City Infrastructure) / Investment Delay
+	~	Unit/Month
+	~		|
+
+Investment Delay=12
+	~	Month
+	~		|
+
+Sustainability Threshold=0.8
+	~	
+	~		|
+
+Tourist Population= INTEG (Arrival Rate-Departure Rate,
+		500)
+	~	Person
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 120
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 0.25
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,62,2
+10,1,Tourist Population,452,297,46,26,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,2,48,323,296,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,3,5,2,100,0,0,22,0,192,0,-1--1--1,,1|(345,296)|
+1,4,5,1,4,0,0,22,0,192,0,-1--1--1,,1|(387,296)|
+11,5,0,363,296,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,6,Arrival Rate,363,323,40,19,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,7,48,663,297,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,8,10,1,100,0,0,22,0,192,0,-1--1--1,,1|(532,297)|
+1,9,10,7,4,0,0,22,0,192,0,-1--1--1,,1|(616,297)|
+11,10,0,573,297,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,11,Departure Rate,573,330,56,25,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,12,City Infrastructure,459,471,53,26,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,13,48,312,470,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,14,16,13,100,0,0,22,0,192,0,-1--1--1,,1|(338,470)|
+1,15,16,12,4,0,0,22,0,192,0,-1--1--1,,1|(386,470)|
+11,16,0,360,470,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,17,Infrastructure Investment,360,516,49,38,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,18,Environmental Quality,465,670,55,26,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,19,48,680,670,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,20,22,18,100,0,0,22,0,192,0,-1--1--1,,1|(554,670)|
+1,21,22,19,4,0,0,22,0,192,0,-1--1--1,,1|(635,670)|
+11,22,0,595,670,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,23,Environmental Decay,595,704,55,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,24,City Popularity,793,548,55,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,25,18,24,1,0,0,0,0,192,0,-1--1--1,,1|(610,598)|
+10,26,Crowding Pressure,777,391,68,49,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,27,1,26,1,0,0,0,0,192,0,-1--1--1,,1|(588,356)|
+1,28,12,26,1,0,0,0,0,192,0,-1--1--1,,1|(590,428)|
+10,29,Decay Factor,756,203,73,33,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,30,26,24,1,0,0,0,0,192,0,-1--1--1,,1|(895,471)|
+1,31,1,6,1,0,0,0,0,192,0,-1--1--1,,1|(383,379)|
+1,32,24,6,1,0,0,0,0,192,0,-1--1--1,,1|(819,181)|
+1,33,1,23,1,0,0,0,0,192,0,-1--1--1,,1|(347,671)|
+10,34,Desired Infrastructure,142,457,70,35,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,35,Investment Delay,148,568,80,35,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,36,34,17,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,37,35,17,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,38,12,17,1,0,0,0,0,192,0,-1--1--1,,1|(421,529)|
+10,39,Average Stay Duration,770,302,49,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,40,39,11,1,0,0,0,0,192,0,-1--1--1,,1|(698,324)|
+1,41,1,11,1,0,0,0,0,192,0,-1--1--1,,1|(510,386)|
+10,42,Sustainability Threshold,1000,212,52,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,43,42,29,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,44,26,29,1,0,0,0,0,192,0,-1--1--1,,1|(948,337)|
+///---\\\
+:L<%^E!@
+1:current.vdfx
+4:Time
+5:Decay Factor
+9:current
+19:62,0
+24:0
+25:120
+26:120
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Vensim Sans|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
