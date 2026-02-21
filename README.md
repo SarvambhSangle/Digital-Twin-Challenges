@@ -24,5 +24,7 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 5.  Tourism Overload (Over tourism): Model how the reinforcing loop of "City Popularity" leads to a stock of "Tourists" that eventually triggers a balancing loop of "Infrastructure Strain" and "Environmental Decay," lowering the city's future appeal.
 
 6.  Peer-to-Peer (P2P) Energy Trading: Model the dynamics between "prosumers" (who both produce and consume solar energy), grid stability, and how dynamic pricing acts as a balancing loop to prevent grid overload.
+  
+7.  Cybersecurity Exploit-Patch Race: Model the "Vulnerability Window" as a stock, with "Exploit Discovery" as the inflow and "Patch Deployment" as the outflow, influenced by organizational "Patching Delay."
 
 
