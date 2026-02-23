@@ -27,4 +27,5 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
   
 7.  Cybersecurity Exploit-Patch Race: Model the "Vulnerability Window" as a stock, with "Exploit Discovery" as the inflow and "Patch Deployment" as the outflow, influenced by organizational "Patching Delay."
 
+8. SaaS (Software as a Service) "Cash Gap": Model the reinforcing loop of customer acquisition vs. the "Cash" stock, specifically focusing on the time lag between paying for marketing (CAC) and achieving profitability (LTV).
 
