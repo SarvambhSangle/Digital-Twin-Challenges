@@ -1,0 +1,142 @@
+{UTF-8}
+Burn Rate=10000 + ("CAC (Customer Acquisition Cost)")
+	~	Dollar/Month
+	~		|
+
+"CAC (Customer Acquisition Cost)"=500
+	~	Dollar/User
+	~		|
+
+Cash= INTEG (Revenue Inflow-Burn Rate,
+		50000)
+	~	Dollar
+	~		|
+
+Cash Collected=Revenue Inflow * 1.2
+	~	Dollar/Month
+	~		|
+
+Customer Acquisition Rate=Marketing Budget / "CAC (Customer Acquisition Cost)"
+	~	User/Month
+	~		|
+
+Customer Base= INTEG (Customer Acquisition Rate,
+		0)
+	~	User
+	~		|
+
+Deferred Revenue= INTEG (Cash Collected - Revenue Recognized,
+		0)
+	~	Dollar
+	~		|
+
+Marketing Budget=5000
+	~	Dollar/Month
+	~		|
+
+Monthly Subscription Fee=50
+	~	Dollar/User/Month
+	~		|
+
+Revenue Inflow=Customer Base * Monthly Subscription Fee
+	~	Dollar/Month
+	~		|
+
+Revenue Recognized=DELAY1(Cash Collected, 12)
+	~	Dollar/Month
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 36
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 0.125
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,100,2
+10,1,Cash,252,116,46,26,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,2,Customer Base,263,251,57,26,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,3,Deferred Revenue,262,385,46,26,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,4,48,72,247,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,5,7,4,100,0,0,22,0,192,0,-1--1--1,,1|(110,247)|
+1,6,7,2,4,0,0,22,0,192,0,-1--1--1,,1|(178,247)|
+11,7,0,144,247,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,8,Customer Acquisition Rate,144,281,61,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,9,48,66,112,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,10,12,9,100,0,0,22,0,192,0,-1--1--1,,1|(105,112)|
+1,11,12,1,4,0,0,22,0,192,0,-1--1--1,,1|(176,112)|
+11,12,0,141,112,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,13,Revenue Inflow,141,146,58,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,14,48,442,116,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,15,17,1,100,0,0,22,0,192,0,-1--1--1,,1|(328,116)|
+1,16,17,14,4,0,0,22,0,192,0,-1--1--1,,1|(401,116)|
+11,17,0,365,116,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,18,Burn Rate,365,150,46,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,19,"CAC (Customer Acquisition Cost)",542,177,62,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,20,19,18,1,0,0,0,0,192,0,-1--1--1,,1|(415,204)|
+10,21,Monthly Subscription Fee,488,293,62,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,22,2,13,1,0,0,0,0,192,0,-1--1--1,,1|(172,201)|
+1,23,21,13,1,0,0,0,0,192,0,-1--1--1,,1|(332,203)|
+10,24,Marketing Budget,331,-2,66,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,25,24,8,1,0,0,0,0,192,0,-1--1--1,,1|(130,40)|
+1,26,19,8,1,0,0,0,0,192,0,-1--1--1,,1|(344,345)|
+10,27,Cash Collected,140,452,56,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,28,Revenue Recognized,365,454,46,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,29,27,3,1,0,0,0,0,192,0,-1--1--1,,1|(170,390)|
+1,30,28,3,1,0,0,0,0,192,0,-1--1--1,,1|(368,443)|
+1,31,13,27,1,0,0,0,0,192,0,-1--1--1,,1|(-23,338)|
+1,32,27,28,1,0,0,0,0,192,0,-1--1--1,,1|(274,516)|
+///---\\\
+:L<%^E!@
+5:Revenue Recognized
+19:100,0
+24:0
+25:0
+26:0
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Vensim Sans|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
