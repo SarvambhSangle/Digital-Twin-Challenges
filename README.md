@@ -29,3 +29,6 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 
 8. SaaS (Software as a Service) "Cash Gap": Model the reinforcing loop of customer acquisition vs. the "Cash" stock, specifically focusing on the time lag between paying for marketing (CAC) and achieving profitability (LTV).
 
+9. Urban Traffic Congestion & Transit Adoption: Model the balancing loop of road capacity (as roads fill, travel time increases) and the reinforcing loop of public transit investment as an alternative "Stock" for commuters.
+
+
