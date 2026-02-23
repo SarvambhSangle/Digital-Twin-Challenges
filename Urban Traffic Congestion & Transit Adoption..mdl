@@ -1,0 +1,136 @@
+{UTF-8}
+Base Time=20
+	~	Minute
+	~		|
+
+Car Commuters= INTEG (Car Commuters + Switch to Cars-Switch to Transit,
+		5000)
+	~	Person
+	~		|
+
+Car Travel Time=Base Time * (1 + (Car Commuters / Road Capacity)^4)
+	~	Minute
+	~		|
+
+Public Transit Users= INTEG (Switch to Transit-Switch to Cars,
+		1000)
+	~	Person
+	~		|
+
+Road Capacity=6000
+	~	Car
+	~		|
+
+Road Congestion=Car Commuters / Road Capacity
+	~	Dmnl
+	~		|
+
+Switch to Cars=Public Transit Users * (Transit Travel Time / Car Travel Time) * 0.02
+	~	Person/Month
+	~		|
+
+Switch to Transit=Car Commuters * (Car Travel Time / 30) * 0.01
+	~	Person/Month
+	~		|
+
+Transit Quality=Public Transit Users * 0.05
+	~	Dmnl
+	~		|
+
+Transit Travel Time=40 / (Transit Quality + 1)
+	~	Minute
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 120
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 0.25
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,75,2
+10,1,Car Commuters,365,357,68,88,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,2,Public Transit Users,692,359,72,87,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,3,5,1,100,0,0,22,0,192,0,-1--1--1,,1|(473,282)|
+1,4,5,2,4,0,0,22,0,192,0,-1--1--1,,1|(573,282)|
+11,5,0,520,282,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,6,Switch to Transit,520,316,62,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,7,9,2,100,0,0,22,0,192,0,-1--1--1,,1|(577,407)|
+1,8,9,1,4,0,0,22,0,192,0,-1--1--1,,1|(478,407)|
+11,9,0,529,407,6,36,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,10,Switch to Cars,529,469,54,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,11,Road Congestion,247,177,63,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,12,1,11,1,0,0,0,0,192,0,-1--1--1,,1|(340,224)|
+10,13,Car Travel Time,444,177,59,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,14,Road Capacity,616,176,57,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,15,14,13,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+10,16,Transit Quality,721,519,56,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,17,2,16,1,0,0,0,0,192,0,-1--1--1,,1|(827,456)|
+10,18,Transit Travel Time,539,561,52,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,19,16,18,1,0,0,0,0,192,0,-1--1--1,,1|(672,561)|
+1,20,1,13,1,0,0,0,0,192,0,-1--1--1,,1|(379,231)|
+10,21,Base Time,443,123,42,42,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,22,21,13,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,23,1,6,1,0,0,0,0,192,0,-1--1--1,,1|(504,342)|
+1,24,13,6,1,0,0,0,0,192,0,-1--1--1,,1|(500,311)|
+1,25,14,11,1,0,0,0,0,192,0,-1--1--1,,1|(433,90)|
+1,26,2,10,1,0,0,0,0,192,0,-1--1--1,,1|(644,510)|
+1,27,18,10,1,0,0,0,0,192,0,-1--1--1,,1|(432,519)|
+1,28,13,10,1,0,0,0,0,192,0,-1--1--1,,1|(246,423)|
+///---\\\
+:L<%^E!@
+1:current.vdfx
+4:Time
+5:Switch to Cars
+9:current
+19:75,0
+24:0
+25:120
+26:120
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Vensim Sans|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
