@@ -31,4 +31,5 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 
 9. Urban Traffic Congestion & Transit Adoption: Model the balancing loop of road capacity (as roads fill, travel time increases) and the reinforcing loop of public transit investment as an alternative "Stock" for commuters.
 
+10. The "Bullwhip Effect" in Supply Chains: Model how small fluctuations in consumer demand at the "Retailer" stock lead to massive, oscillating waves of over-ordering at the "Manufacturer" level due to information delays.
 
