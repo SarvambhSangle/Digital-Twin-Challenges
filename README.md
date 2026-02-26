@@ -33,3 +33,4 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 
 10. The "Bullwhip Effect" in Supply Chains: Model how small fluctuations in consumer demand at the "Retailer" stock lead to massive, oscillating waves of over-ordering at the "Manufacturer" level due to information delays.
 
+11. Epidemic Spread & Healthcare Capacity (The SIR Model).
