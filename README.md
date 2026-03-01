@@ -36,4 +36,6 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 11. Epidemic Spread & Healthcare Capacity (The SIR Model).
 
 12. The "Brooks's Law" Software Project Model.
+    
+13. V2G (Vehicle-to-Grid) Balancing: Modeling how EV batteries stabilize the grid during peak Nagpur heat.
 
