@@ -39,3 +39,5 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
     
 13. V2G (Vehicle-to-Grid) Balancing: Modeling how EV batteries stabilize the grid during peak Nagpur heat.
 
+14. Green Hydrogen Electrolysis: The efficiency trade-off between solar availability and hydrogen storage.
+
