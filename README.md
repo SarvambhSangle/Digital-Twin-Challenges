@@ -41,3 +41,5 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 
 14. Green Hydrogen Electrolysis: The efficiency trade-off between solar availability and hydrogen storage.
 
+15. Microgrid Islanding: Simulating a campus grid (like VNIT) disconnecting from the main grid during a fault.
+
