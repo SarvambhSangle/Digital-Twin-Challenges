@@ -1,0 +1,91 @@
+{UTF-8}
+Battery Capacity  = A FUNCTION OF( -Capacity Loss Rate)
+	~	
+	~		|
+
+Capacity Loss Rate  = A FUNCTION OF( )
+	~	
+	~		|
+
+Dendrite Growth Rate  = A FUNCTION OF( )
+	~	
+	~		|
+
+Dendrite Mass  = A FUNCTION OF( Dendrite Growth Rate)
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Cycle
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Cycle
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Cycle [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Cycle [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,100,2
+10,1,Battery Capacity,187,135,62,36,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,2,Dendrite Mass,246,306,56,38,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,3,48,414,135,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,4,6,1,100,0,0,22,0,192,0,-1--1--1,,1|(281,135)|
+1,5,6,3,4,0,0,22,0,192,0,-1--1--1,,1|(365,135)|
+11,6,0,320,135,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,7,Capacity Loss Rate,320,163,45,20,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,8,48,25,302,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,9,11,8,100,0,0,22,0,192,0,-1--1--1,,1|(65,302)|
+1,10,11,2,4,0,0,22,0,192,0,-1--1--1,,1|(149,302)|
+11,11,0,102,302,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,12,Dendrite Growth Rate,102,333,81,23,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+///---\\\
+:L<%^E!@
+5:Dendrite Mass
+19:100,0
+24:0
+25:0
+26:0
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Vensim Sans|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
