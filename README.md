@@ -43,5 +43,7 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 
 15. Microgrid Islanding: Simulating a campus grid (like VNIT) disconnecting from the main grid during a fault.
     
-16.Carbon Credit Trading: A market model where factories "buy" the right to pollute from green energy producers 
+16. Carbon Credit Trading: A market model where factories "buy" the right to pollute from green energy producers
+
+17. Solid State Battery Aging: Modeling the chemical degradation of next-gen batteries over 10,000 cycles 
 
