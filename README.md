@@ -47,3 +47,4 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 
 17. Solid State Battery Aging: Modeling the chemical degradation of next-gen batteries over 10,000 cycles 
 
+18. Human-Robot Collaboration (Cobots): Modeling the safety-speed trade-off in an automated assembly line.
