@@ -1,0 +1,116 @@
+{UTF-8}
+Collision Risk=Robot Arm Speed / (Human Proximity + 0.1)
+	~	Risk Index
+	~		|
+
+Finished Goods Inventory= INTEG (Production Rate,
+		0)
+	~	Unit
+	~		|
+
+Human Proximity=1 + SIN(2 * 3.14159 * Time / 60)
+	~	Meter
+	~		|
+
+Incoming Orders=5
+	~	Unit/Minute
+	~		|
+
+Production Rate=Robot Arm Speed
+	~	Unit/Minute
+	~		|
+
+Robot Arm Speed=IF THEN ELSE(Human Proximity < 1, 2, 10)
+	~	Unit/Minute
+	~		|
+
+Work In Progress= INTEG (Incoming Orders-Production Rate,
+		50)
+	~	Unit
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 480
+	~	Minute
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Minute
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Minute [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Minute [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,90,2
+10,1,Work In Progress,317,127,63,26,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,2,Finished Goods Inventory,596,129,58,26,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,3,48,94,124,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,4,6,3,100,0,0,22,0,192,0,-1--1--1,,1|(136,124)|
+1,5,6,1,4,0,0,22,0,192,0,-1--1--1,,1|(217,124)|
+11,6,0,174,124,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,7,Incoming Orders,174,151,58,19,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,8,10,1,100,0,0,22,0,192,0,-1--1--1,,1|(416,128)|
+1,9,10,2,4,0,0,22,0,192,0,-1--1--1,,1|(501,128)|
+11,10,0,459,128,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,11,Production Rate,459,162,60,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,12,Robot Arm Speed,467,248,65,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,13,12,11,1,0,0,0,0,192,0,-1--1--1,,1|(542,201)|
+10,14,Human Proximity,334,326,64,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,15,14,12,1,0,0,0,0,192,0,-1--1--1,,1|(404,241)|
+10,16,Collision Risk,628,320,50,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,17,14,16,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,18,12,16,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+10,19,Time,182,277,31,16,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+1,20,19,14,1,0,0,0,0,192,0,-1--1--1,,1|(254,324)|
+///---\\\
+:L<%^E!@
+1:current.vdfx
+4:Time
+5:Collision Risk
+9:current
+19:90,0
+24:0
+25:480
+26:480
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Vensim Sans|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
