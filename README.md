@@ -49,4 +49,6 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 
 18. Human-Robot Collaboration (Cobots): Modeling the safety-speed trade-off in an automated assembly line.
 
-19. Predictive Maintenance Lag: The cost of "Repairing too early" vs. "Repairing too late" (Sensor-driven) 
+19. Predictive Maintenance Lag: The cost of "Repairing too early" vs. "Repairing too late" (Sensor-driven)
+
+20. AI Training Data Bias: A reinforcing loop where biased data creates biased AI, leading to more biased real-world data. 
