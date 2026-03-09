@@ -1,0 +1,99 @@
+{UTF-8}
+Cloud Offloading Rate  = A FUNCTION OF( )
+	~	
+	~		|
+
+Edge Processing Rate  = A FUNCTION OF( )
+	~	
+	~		|
+
+Local Device Buffer  = A FUNCTION OF( -Edge Processing Rate,Sensor Input Rate)
+	~	
+	~		|
+
+Processed Output Stock  = A FUNCTION OF( -Cloud Offloading Rate,Edge Processing Rate)
+	~	
+	~		|
+
+Sensor Input Rate  = A FUNCTION OF( )
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Second
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Second
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Second [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 0.5
+	~	Second [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,100,2
+10,1,Local Device Buffer,259,205,57,35,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,2,Processed Output Stock,516,205,54,39,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,3,48,41,200,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,4,6,3,100,0,0,22,0,192,0,-1--1--1,,1|(85,200)|
+1,5,6,1,4,0,0,22,0,192,0,-1--1--1,,1|(167,200)|
+11,6,0,126,200,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,7,Sensor Input Rate,126,234,66,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,8,10,1,100,0,0,22,0,192,0,-1--1--1,,1|(349,205)|
+1,9,10,2,4,0,0,22,0,192,0,-1--1--1,,1|(428,205)|
+11,10,0,389,205,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,11,Edge Processing Rate,389,239,61,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,12,48,700,205,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,13,15,2,100,0,0,22,0,192,0,-1--1--1,,1|(597,205)|
+1,14,15,12,4,0,0,22,0,192,0,-1--1--1,,1|(663,205)|
+11,15,0,630,205,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,16,Cloud Offloading Rate,630,239,63,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+///---\\\
+:L<%^E!@
+5:Cloud Offloading Rate
+19:100,0
+24:0
+25:0
+26:0
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Vensim Sans|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
