@@ -54,3 +54,7 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 20. AI Training Data Bias: A reinforcing loop where biased data creates biased AI, leading to more biased real-world data.
 
 21. Edge Computing Latency: Simulating the data bottleneck between local sensors and the central Cloud.
+
+22. Digital Twin Synchronization: Modeling the "Delay" between a physical machine and its virtual replica. 
+
+23. Urban Heat Island Effect: How concrete density increases local temperatures and AC power demand.
