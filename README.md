@@ -58,3 +58,5 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 22. Digital Twin Synchronization: Modeling the "Delay" between a physical machine and its virtual replica. 
 
 23. Urban Heat Island Effect: How concrete density increases local temperatures and AC power demand.
+
+24. Plastic Circularity: Modeling the "Leakage" of plastic from recycling loops into the ocean.
