@@ -1,0 +1,123 @@
+{UTF-8}
+Consumer Plastic Stock= INTEG (Production Rate-Recycling Collection Rate-Leakage Rate\
+		,
+		1000)
+	~	Tons
+	~		|
+
+Environmental Waste= INTEG (Leakage Rate,
+		0)
+	~	Tons
+	~		|
+
+Leakage Rate=Consumer Plastic Stock * (1 - Recycling Efficiency)
+	~	Tons/Month
+	~		|
+
+Production Rate=500 / Virgin Material Tax
+	~	Tons/Month
+	~		|
+
+Recycled Material Inventory= INTEG (Leakage Rate+Recycling Collection Rate,
+		0)
+	~	Tons
+	~		|
+
+Recycling Collection Rate=Consumer Plastic Stock * Recycling Efficiency
+	~	Tons/Month
+	~		|
+
+Recycling Efficiency=0.4
+	~	Dmnl
+	~		|
+
+Virgin Material Tax=1.5
+	~	$/kg
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 120
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,82,2
+10,1,Consumer Plastic Stock,246,183,64,26,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,2,Recycled Material Inventory,472,180,66,26,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,3,Environmental Waste,691,178,55,26,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,4,48,49,183,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,5,7,4,100,0,0,22,0,192,0,-1--1--1,,1|(87,183)|
+1,6,7,1,4,0,0,22,0,192,0,-1--1--1,,1|(154,183)|
+11,7,0,120,183,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,8,Production Rate,120,217,60,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,9,11,1,100,0,0,22,0,192,0,-1--1--1,,1|(331,181)|
+1,10,11,2,4,0,0,22,0,192,0,-1--1--1,,1|(385,181)|
+11,11,0,358,181,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,12,Recycling Collection Rate,358,215,56,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,13,15,2,100,0,0,22,0,192,0,-1--1--1,,1|(560,185)|
+1,14,15,3,4,0,0,22,0,192,0,-1--1--1,,1|(615,185)|
+11,15,0,588,185,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,16,Leakage Rate,588,220,57,27,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,17,Recycling Efficiency,493,310,46,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,18,17,16,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,19,17,12,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+10,20,Virgin Material Tax,114,304,56,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,21,20,8,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,22,16,1,1,0,0,0,0,192,0,-1--1--1,,1|(294,349)|
+1,23,1,12,1,0,0,0,0,192,0,-1--1--1,,1|(320,237)|
+1,24,1,16,1,0,0,0,0,192,0,-1--1--1,,1|(560,339)|
+///---\\\
+:L<%^E!@
+5:Recycled Material Inventory
+19:82,0
+24:0
+25:0
+26:0
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Vensim Sans|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
