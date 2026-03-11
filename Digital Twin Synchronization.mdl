@@ -1,0 +1,110 @@
+{UTF-8}
+Physical Change Rate=10 + STEP(20, 30)
+	~	Unit/ms
+	~		|
+
+Physical Machine State= INTEG (Physical Change Rate,
+		0)
+	~	Unit
+	~		|
+
+Sensor Sampling Frequency=0.1
+	~	1/ms
+	~		|
+
+Sync Error=Physical Machine State-Virtual Replica State
+	~	Unit
+	~		|
+
+Sync Update Rate=(Sync Error * Sensor Sampling Frequency)
+	~	Unit/ms
+	~		|
+
+Virtual Replica State= INTEG (Sync Update Rate,
+		0)
+	~	Unit
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	ms
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	ms
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	ms [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	ms [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,100,2
+10,1,Physical Machine State,264,87,64,26,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,2,Virtual Replica State,267,240,57,27,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,3,48,65,84,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,4,6,3,100,0,0,22,0,192,0,-1--1--1,,1|(103,84)|
+1,5,6,1,4,0,0,22,0,192,0,-1--1--1,,1|(171,84)|
+11,6,0,137,84,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,7,Physical Change Rate,137,118,61,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,8,48,69,240,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,9,11,8,100,0,0,22,0,192,0,-1--1--1,,1|(104,240)|
+1,10,11,2,4,0,0,22,0,192,0,-1--1--1,,1|(176,240)|
+11,11,0,136,240,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,12,Sync Update Rate,136,272,57,24,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,13,Sensor Sampling Frequency,303,328,63,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,14,13,12,1,0,0,0,0,192,0,-1--1--1,,1|(162,332)|
+10,15,Sync Error,462,166,46,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,16,15,12,1,0,0,0,0,192,0,-1--1--1,,1|(389,261)|
+1,17,1,15,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,18,2,15,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+///---\\\
+:L<%^E!@
+1:current.vdfx
+4:Time
+5:Physical Change Rate
+9:current
+19:100,0
+24:0
+25:100
+26:100
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Vensim Sans|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
