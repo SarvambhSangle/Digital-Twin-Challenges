@@ -60,3 +60,5 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 23. Urban Heat Island Effect: How concrete density increases local temperatures and AC power demand.
 
 24. Plastic Circularity: Modeling the "Leakage" of plastic from recycling loops into the ocean.
+
+25.Precision Agriculture: Using soil moisture sensors to minimize water waste in Nagpur’s orange orchards. 
