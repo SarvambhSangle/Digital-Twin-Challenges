@@ -1,0 +1,113 @@
+{UTF-8}
+Evapotranspiration Rate=2 + SIN(2 * 3.14159 * Time / 24)
+	~	Percent/Hour
+	~		|
+
+Irrigation Rate=Pump Capacity * Soil Moisture Sensor
+	~	Percent/Hour
+	~		|
+
+Pump Capacity=10
+	~	Percent/Hour
+	~		|
+
+Soil Moisture Content= INTEG (Irrigation Rate-Evapotranspiration Rate,
+		40)
+	~	Percent
+	~		|
+
+Soil Moisture Sensor=IF THEN ELSE(Soil Moisture Content < Target Threshold, 1, 0)
+	~	Dmnl
+	~		|
+
+Target Threshold=30
+	~	Percent
+	~		|
+
+Water Reservoir= INTEG (-Irrigation Rate,
+		5000)
+	~	Liters
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 168
+	~	Hour
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Hour
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Hour [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 0.5
+	~	Hour [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,100,2
+10,1,Soil Moisture Content,454,164,50,26,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,2,Water Reservoir,217,165,60,26,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,3,5,2,100,0,0,22,0,192,0,-1--1--1,,1|(305,164)|
+1,4,5,1,4,0,0,22,0,192,0,-1--1--1,,1|(374,164)|
+11,5,0,339,164,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,6,Irrigation Rate,339,194,36,22,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,7,48,656,164,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,8,10,1,100,0,0,22,0,192,0,-1--1--1,,1|(544,164)|
+1,9,10,7,4,0,0,22,0,192,0,-1--1--1,,1|(621,164)|
+11,10,0,591,164,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,11,Evapotranspiration Rate,591,198,70,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,12,Soil Moisture Sensor,460,272,50,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,13,Target Threshold,326,316,64,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,14,Pump Capacity,185,250,56,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,15,14,6,1,0,0,0,0,192,0,-1--1--1,,1|(305,246)|
+10,16,Time,608,273,31,16,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+1,17,16,11,1,0,0,0,0,192,0,-1--1--1,,1|(646,252)|
+1,18,12,6,1,0,0,0,0,192,0,-1--1--1,,1|(427,235)|
+1,19,1,12,1,0,0,0,0,192,0,-1--1--1,,1|(488,258)|
+1,20,13,12,1,0,0,0,0,192,0,-1--1--1,,1|(454,335)|
+///---\\\
+:L<%^E!@
+5:Irrigation Rate
+19:100,0
+24:0
+25:0
+26:0
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Vensim Sans|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
