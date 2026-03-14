@@ -61,4 +61,6 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 
 24. Plastic Circularity: Modeling the "Leakage" of plastic from recycling loops into the ocean.
 
-25.Precision Agriculture: Using soil moisture sensors to minimize water waste in Nagpur’s orange orchards. 
+25. Precision Agriculture: Using soil moisture sensors to minimize water waste in Nagpur’s orange orchards.
+
+26. Coastal Flood Defense: A balancing loop of rising sea levels vs. investment in sea walls. 
