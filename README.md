@@ -63,4 +63,6 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 
 25. Precision Agriculture: Using soil moisture sensors to minimize water waste in Nagpur’s orange orchards.
 
-26. Coastal Flood Defense: A balancing loop of rising sea levels vs. investment in sea walls. 
+26. Coastal Flood Defense: A balancing loop of rising sea levels vs. investment in sea walls.
+
+27. E-Waste Mining: The economics of recovering gold and lithium from old smartphones vs. new mining.
