@@ -66,3 +66,5 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 26. Coastal Flood Defense: A balancing loop of rising sea levels vs. investment in sea walls.
 
 27. E-Waste Mining: The economics of recovering gold and lithium from old smartphones vs. new mining.
+
+28. Neuro-Fuzzy Drowsiness Detection : Expanding Modeling the driver's alertness level as a stock. 
