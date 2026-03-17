@@ -67,4 +67,6 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 
 27. E-Waste Mining: The economics of recovering gold and lithium from old smartphones vs. new mining.
 
-28. Neuro-Fuzzy Drowsiness Detection : Expanding Modeling the driver's alertness level as a stock. 
+28. Neuro-Fuzzy Drowsiness Detection : Expanding Modeling the driver's alertness level as a stock.
+
+29. Remote Surgery Latency: The critical "Safety Buffer" needed for 5G-enabled robotic surgery.
