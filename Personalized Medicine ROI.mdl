@@ -1,0 +1,116 @@
+{UTF-8}
+Adverse Reaction Cost=200
+	~	$/Year
+	~		|
+
+Genomic Sequencing Cost=500 * EXP(-0.2 * Time)
+	~	$/Year
+	~		|
+
+Mass Accrual Rate=1000 - Adverse Reaction Cost
+	~	$/Year
+	~		|
+
+Mass Market Cumulative Benefit= INTEG (Mass Accrual Rate,
+		0)
+	~	$
+	~		|
+
+Personalized Medicine Cumulative Benefit= INTEG (Precision Accrual Rate,
+		5000)
+	~	$
+	~		|
+
+Precision Accrual Rate=(1000 * Treatment Efficacy Factor) - Genomic Sequencing Cost
+	~	$/Year
+	~		|
+
+Treatment Efficacy Factor=1.8
+	~	Dmnl
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 20
+	~	Year
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Year
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Year [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 0.25
+	~	Year [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,100,2
+10,1,Mass Market Cumulative Benefit,367,75,74,31,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,2,Personalized Medicine Cumulative Benefit,372,242,77,36,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,3,48,172,70,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,4,6,3,100,0,0,22,0,192,0,-1--1--1,,1|(206,70)|
+1,5,6,1,4,0,0,22,0,192,0,-1--1--1,,1|(268,70)|
+11,6,0,237,70,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,7,Mass Accrual Rate,237,104,51,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,8,48,156,236,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,9,11,8,100,0,0,22,0,192,0,-1--1--1,,1|(195,236)|
+1,10,11,2,4,0,0,22,0,192,0,-1--1--1,,1|(265,236)|
+11,11,0,230,236,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,12,Precision Accrual Rate,230,270,64,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,13,Genomic Sequencing Cost,248,370,62,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,14,13,12,1,0,0,0,0,192,0,-1--1--1,,1|(169,311)|
+10,15,Treatment Efficacy Factor,426,333,54,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,16,15,12,1,0,0,0,0,192,0,-1--1--1,,1|(336,342)|
+10,17,Adverse Reaction Cost,186,173,64,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,18,17,7,1,0,0,0,0,192,0,-1--1--1,,1|(161,129)|
+10,19,Time,105,394,31,16,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+1,20,19,13,1,0,0,0,0,192,0,-1--1--1,,1|(197,420)|
+///---\\\
+:L<%^E!@
+1:current.vdfx
+4:Time
+5:Adverse Reaction Cost
+9:current
+19:100,0
+24:0
+25:20
+26:20
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Vensim Sans|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
