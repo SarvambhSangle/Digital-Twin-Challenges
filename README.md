@@ -73,4 +73,6 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 
 30. Misinformation Viral Velocity: Modeling how "Fake News" travels faster than "Fact Checks" on social networks.
 
-31. Personalized Medicine ROI: The cost-benefit of DNA-tailored drugs vs. mass-market pharmaceuticals. 
+31. Personalized Medicine ROI: The cost-benefit of DNA-tailored drugs vs. mass-market pharmaceuticals.
+
+32. Space Junk Cascade (Kessler Syndrome): A reinforcing loop of satellite collisions creating more debris. 
