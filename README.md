@@ -75,4 +75,6 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 
 31. Personalized Medicine ROI: The cost-benefit of DNA-tailored drugs vs. mass-market pharmaceuticals.
 
-32. Space Junk Cascade (Kessler Syndrome): A reinforcing loop of satellite collisions creating more debris. 
+32. Space Junk Cascade (Kessler Syndrome): A reinforcing loop of satellite collisions creating more debris.
+
+33. Vertical Farming Resource Loop: Modeling the recycling of nutrient-rich water and LED energy consumption vs. traditional crop yield.
