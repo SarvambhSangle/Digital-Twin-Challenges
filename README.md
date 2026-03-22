@@ -78,3 +78,5 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 32. Space Junk Cascade (Kessler Syndrome): A reinforcing loop of satellite collisions creating more debris.
 
 33. Vertical Farming Resource Loop: Modeling the recycling of nutrient-rich water and LED energy consumption vs. traditional crop yield.
+
+34. Smart Waste Sorting Efficiency: A reinforcing loop where better AI training for waste robots increases the "Purity" of recycled material stocks. 
