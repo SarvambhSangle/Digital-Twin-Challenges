@@ -1,0 +1,101 @@
+{UTF-8}
+AI Training Data Pool= INTEG (Data Acquisition Rate,
+		100)
+	~	GB
+	~		|
+
+Automated Sorting Rate=100 * Sorting Accuracy
+	~	Tons/Week
+	~		|
+
+Data Acquisition Rate="High-Purity Plastic Stock" * 10
+	~	GB/Week
+	~		|
+
+"High-Purity Plastic Stock"= INTEG (Automated Sorting Rate,
+		0)
+	~	Tons
+	~		|
+
+Sorting Accuracy=0.6 + (0.3 * (AI Training Data Pool / 10000))
+	~	Dmnl
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 52
+	~	Week
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Week
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Week [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Week [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,100,2
+10,1,AI Training Data Pool,300,136,60,26,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,2,"High-Purity Plastic Stock",306,264,62,30,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,3,48,81,134,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,4,6,3,100,0,0,22,0,192,0,-1--1--1,,1|(125,134)|
+1,5,6,1,4,0,0,22,0,192,0,-1--1--1,,1|(205,134)|
+11,6,0,165,134,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,7,Data Acquisition Rate,165,168,61,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,8,48,71,273,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,9,11,8,100,0,0,22,0,192,0,-1--1--1,,1|(112,273)|
+1,10,11,2,4,0,0,22,0,192,0,-1--1--1,,1|(200,273)|
+11,11,0,150,273,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,12,Automated Sorting Rate,150,307,47,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,13,Sorting Accuracy,463,197,62,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,14,1,13,1,0,0,0,0,192,0,-1--1--1,,1|(459,165)|
+1,15,13,12,1,0,0,0,0,192,0,-1--1--1,,1|(424,333)|
+1,16,2,7,1,0,0,0,0,192,0,-1--1--1,,1|(215,215)|
+///---\\\
+:L<%^E!@
+5:Data Acquisition Rate
+19:100,0
+24:0
+25:0
+26:0
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Vensim Sans|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
