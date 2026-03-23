@@ -79,4 +79,6 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 
 33. Vertical Farming Resource Loop: Modeling the recycling of nutrient-rich water and LED energy consumption vs. traditional crop yield.
 
-34. Smart Waste Sorting Efficiency: A reinforcing loop where better AI training for waste robots increases the "Purity" of recycled material stocks. 
+34. Smart Waste Sorting Efficiency: A reinforcing loop where better AI training for waste robots increases the "Purity" of recycled material stocks.
+
+35. District Cooling Systems: Simulating a centralized AC hub for a Nagpur tech park to model the reduction in "Peak Load" compared to individual units.
