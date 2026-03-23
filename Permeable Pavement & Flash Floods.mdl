@@ -1,0 +1,115 @@
+{UTF-8}
+Flash Flood Indicator=IF THEN ELSE(Surface Runoff Volume > 100, 1, 0)
+	~	Dmnl
+	~		|
+
+Monsoon Rainfall Rate=STEP(500, 10) - STEP(500, 40)
+	~	Liters/Min
+	~		|
+
+Pavement Infiltration Rate=Surface Runoff Volume * Pavement Porosity
+	~	Liters/Min
+	~		|
+
+Pavement Porosity=0.4
+	~	Dmnl
+	~		|
+
+Sewer Discharge Rate=Sewer System Capacity * 0.1
+	~	Liters/Min
+	~		|
+
+Sewer System Capacity= INTEG (Pavement Infiltration Rate-Sewer Discharge Rate,
+		0)
+	~	Liters
+	~		|
+
+Surface Runoff Volume= INTEG (Monsoon Rainfall Rate-Pavement Infiltration Rate,
+		0)
+	~	Liters
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 120
+	~	Minute
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Minute
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Minute [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Minute [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,100,2
+10,1,Surface Runoff Volume,235,249,56,26,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,2,Sewer System Capacity,471,247,53,26,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,3,48,42,248,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,4,6,3,100,0,0,22,0,192,0,-1--1--1,,1|(77,248)|
+1,5,6,1,4,0,0,22,0,192,0,-1--1--1,,1|(147,248)|
+11,6,0,109,248,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,7,Monsoon Rainfall Rate,109,282,65,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,8,10,1,100,0,0,22,0,192,0,-1--1--1,,1|(316,246)|
+1,9,10,2,4,0,0,22,0,192,0,-1--1--1,,1|(386,246)|
+11,10,0,348,246,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,11,Pavement Infiltration Rate,348,280,59,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,12,48,680,247,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,13,15,2,100,0,0,22,0,192,0,-1--1--1,,1|(557,247)|
+1,14,15,12,4,0,0,22,0,192,0,-1--1--1,,1|(636,247)|
+11,15,0,597,247,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,16,Sewer Discharge Rate,597,281,62,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,17,Pavement Porosity,294,382,46,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,18,17,11,1,0,0,0,0,192,0,-1--1--1,,1|(345,339)|
+10,19,Flash Flood Indicator,100,384,46,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,20,1,19,1,0,0,0,0,192,0,-1--1--1,,1|(210,335)|
+1,21,1,11,1,0,0,0,0,192,0,-1--1--1,,1|(295,312)|
+1,22,2,16,1,0,0,0,0,192,0,-1--1--1,,1|(553,323)|
+///---\\\
+:L<%^E!@
+5:Flash Flood Indicator
+19:100,0
+24:0
+25:0
+26:0
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Vensim Sans|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
