@@ -82,3 +82,5 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 34. Smart Waste Sorting Efficiency: A reinforcing loop where better AI training for waste robots increases the "Purity" of recycled material stocks.
 
 35. District Cooling Systems: Simulating a centralized AC hub for a Nagpur tech park to model the reduction in "Peak Load" compared to individual units.
+
+36. Permeable Pavement & Flash Floods: Modeling the "Absorption Rate" of city streets during a sudden monsoon downpour to prevent sewer overflow. 
