@@ -85,4 +85,6 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 
 36. Permeable Pavement & Flash Floods: Modeling the "Absorption Rate" of city streets during a sudden monsoon downpour to prevent sewer overflow.
 
-37. The "15-Minute City" Walkability: A balancing loop where increasing local amenities reduces the "Carbon Footprint" of daily commutes. 
+37. The "15-Minute City" Walkability: A balancing loop where increasing local amenities reduces the "Carbon Footprint" of daily commutes.
+
+38. 6G Terahertz Propagation: Modeling the "Path Loss" and high-frequency signal blockage in a dense urban environment. 
