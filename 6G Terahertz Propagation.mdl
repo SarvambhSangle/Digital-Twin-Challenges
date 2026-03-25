@@ -1,0 +1,110 @@
+{UTF-8}
+Absorption Coefficient=0.05
+	~	Dmnl
+	~		|
+
+Beamforming Gain=1.5
+	~	Dmnl
+	~		|
+
+Obstacle Density=STEP(0.8, 40) - STEP(0.8, 45)
+	~	Dmnl
+	~		|
+
+Path Loss Rate=(Received Signal Power * 0.1) * (Obstacle Density + Absorption Coefficient\
+		)
+	~	dBm/Meter
+	~		|
+
+Received Signal Power= INTEG (Transmit Power-Path Loss Rate,
+		100)
+	~	dBm
+	~		|
+
+Transmit Power=30 * Beamforming Gain
+	~	dBm/Meter
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Meter
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Meter
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Meter [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Meter [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,100,2
+10,1,Received Signal Power,333,172,59,26,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,2,48,129,172,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,3,5,2,100,0,0,22,0,192,0,-1--1--1,,1|(169,172)|
+1,4,5,1,4,0,0,22,0,192,0,-1--1--1,,1|(243,172)|
+11,5,0,206,172,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,6,Transmit Power,206,206,59,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,7,48,559,172,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,8,10,1,100,0,0,22,0,192,0,-1--1--1,,1|(428,172)|
+1,9,10,7,4,0,0,22,0,192,0,-1--1--1,,1|(512,172)|
+11,10,0,470,172,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,11,Path Loss Rate,470,206,55,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,12,Obstacle Density,337,285,63,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,13,Absorption Coefficient,530,288,46,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,14,Beamforming Gain,171,289,52,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,15,14,6,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,16,1,11,1,0,0,0,0,192,0,-1--1--1,,1|(431,237)|
+1,17,12,11,1,0,0,0,0,192,0,-1--1--1,,1|(464,270)|
+1,18,13,11,1,0,0,0,0,192,0,-1--1--1,,1|(554,254)|
+///---\\\
+:L<%^E!@
+1:current.vdfx
+4:Time
+5:Absorption Coefficient
+9:current
+19:100,0
+24:0
+25:100
+26:100
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Vensim Sans|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
