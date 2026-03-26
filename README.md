@@ -87,4 +87,8 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 
 37. The "15-Minute City" Walkability: A balancing loop where increasing local amenities reduces the "Carbon Footprint" of daily commutes.
 
-38. 6G Terahertz Propagation: Modeling the "Path Loss" and high-frequency signal blockage in a dense urban environment. 
+38. 6G Terahertz Propagation: Modeling the "Path Loss" and high-frequency signal blockage in a dense urban environment.
+
+39. Starlink Congestion Management: Simulating the handover delay between low-earth orbit (LEO) satellites as thousands of users connect simultaneously.
+
+
