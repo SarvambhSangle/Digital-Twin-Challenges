@@ -1,0 +1,125 @@
+{UTF-8}
+Active User Connections= INTEG (Handover Success Rate-Connection Drop Rate,
+		0)
+	~	Users
+	~		|
+
+Congestion Factor=Active User Connections / 2000
+	~	Dmnl
+	~		|
+
+Connection Drop Rate=Active User Connections * 0.1
+	~	Users/Min
+	~		|
+
+Connection Request Rate=STEP(500, 10) + RANDOM NORMAL(0, 100, 50, 20, 1)
+	~	Users/Min
+	~		|
+
+Handover Delay=(Active User Connections / Satellite Bandwidth Capacity) * 5
+	~	Seconds
+	~		|
+
+Handover Success Rate=MAX(0, Request Buffer Queue * (1 - Congestion Factor))
+	~	Users/Min
+	~		|
+
+Request Buffer Queue= INTEG (Connection Request Rate-Handover Success Rate,
+		0)
+	~	Users
+	~		|
+
+Satellite Bandwidth Capacity=2000
+	~	Users
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 60
+	~	Minute
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Minute
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Minute [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 0.5
+	~	Minute [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,100,2
+10,1,Active User Connections,453,150,48,26,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,2,Request Buffer Queue,241,150,57,26,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,3,48,41,146,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,4,6,3,100,0,0,22,0,192,0,-1--1--1,,1|(81,146)|
+1,5,6,2,4,0,0,22,0,192,0,-1--1--1,,1|(153,146)|
+11,6,0,117,146,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,7,Connection Request Rate,117,180,51,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,8,10,2,100,0,0,22,0,192,0,-1--1--1,,1|(321,150)|
+1,9,10,1,4,0,0,22,0,192,0,-1--1--1,,1|(381,150)|
+11,10,0,351,150,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,11,Handover Success Rate,351,184,50,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,12,48,630,150,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,13,15,1,100,0,0,22,0,192,0,-1--1--1,,1|(527,150)|
+1,14,15,12,4,0,0,22,0,192,0,-1--1--1,,1|(593,150)|
+11,15,0,560,150,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,16,Connection Drop Rate,560,184,63,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,17,Satellite Bandwidth Capacity,263,301,72,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,18,Handover Delay,479,290,59,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,19,1,18,1,0,0,0,0,192,0,-1--1--1,,1|(481,264)|
+1,20,17,18,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,21,2,11,1,0,0,0,0,192,0,-1--1--1,,1|(308,223)|
+10,22,Congestion Factor,403,57,66,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,23,22,11,1,0,0,0,0,192,0,-1--1--1,,1|(325,97)|
+1,24,1,22,1,0,0,0,0,192,0,-1--1--1,,1|(497,104)|
+1,25,1,16,1,0,0,0,0,192,0,-1--1--1,,1|(538,217)|
+///---\\\
+:L<%^E!@
+1:current.vdfx
+4:Time
+5:Handover Success Rate
+9:current
+19:100,0
+24:0
+25:60
+26:60
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Vensim Sans|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
