@@ -91,4 +91,6 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 
 39. Starlink Congestion Management: Simulating the handover delay between low-earth orbit (LEO) satellites as thousands of users connect simultaneously.
 
+40. Quantum Key Distribution (QKD): Modeling the "Eavesdropping Detection Rate" where any attempt to intercept a key changes its state, triggering a system reset. 
+
 
