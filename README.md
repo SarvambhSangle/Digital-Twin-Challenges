@@ -93,6 +93,8 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 
 40. Quantum Key Distribution (QKD): Modeling the "Eavesdropping Detection Rate" where any attempt to intercept a key changes its state, triggering a system reset.
 
-41. Lunar Colony Life Support: A critical "Reserves" model where Oxygen and Water stocks must be balanced against a growing crew and metabolic rates. 
+41. Lunar Colony Life Support: A critical "Reserves" model where Oxygen and Water stocks must be balanced against a growing crew and metabolic rates.
+
+42. Swarm Intelligence Robotics: Modeling the "Cohesion" and "Collision Avoidance" logic for a hundred drones working together on a search-and-rescue mission. 
 
 
