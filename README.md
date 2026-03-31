@@ -99,4 +99,17 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 
 43. The "Final Review" Model: A meta-model of your own learning progress, tracking "Knowledge Stock" vs. "Forgetting Rate" to optimize revision.
 
+44. EUV Lithography Yield Rate – Modeling the precision of Extreme Ultraviolet light in 2nm chip manufacturing.
+
+45. FinFET vs. GAAFET Thermal Leakage – Simulating the "Static Power Loss" in next-generation transistor architectures.
+
+46. Quantum Decoherence Buffer – Modeling the "Stability Time" of a qubit against environmental noise.
+
+47. Chiplet Interconnect Latency – Simulating the data bottleneck between modular "chiplets" in a single package.
+
+48. Silicon Supply Chain Bullwhip Effect – Modeling how a 5% surge in smartphone demand causes a 50% shortage in automotive chips.  
+
+
+
+
 
