@@ -95,6 +95,8 @@ Challenge: Model what happens when the birth rate is slightly higher than the de
 
 41. Lunar Colony Life Support: A critical "Reserves" model where Oxygen and Water stocks must be balanced against a growing crew and metabolic rates.
 
-42. Swarm Intelligence Robotics: Modeling the "Cohesion" and "Collision Avoidance" logic for a hundred drones working together on a search-and-rescue mission. 
+42. Swarm Intelligence Robotics: Modeling the "Cohesion" and "Collision Avoidance" logic for a hundred drones working together on a search-and-rescue mission.
+
+43. The "Final Review" Model: A meta-model of your own learning progress, tracking "Knowledge Stock" vs. "Forgetting Rate" to optimize revision.
 
 
