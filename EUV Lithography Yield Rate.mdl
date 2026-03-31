@@ -1,0 +1,112 @@
+{UTF-8}
+Chip Production Rate=1000 * Yield Percentage
+	~	Chips/Wafer
+	~		|
+
+Cumulative Defects= INTEG (Defect Generation Rate,
+		0)
+	~	Chips
+	~		|
+
+Defect Generation Rate=1000 * (1 - Yield Percentage)
+	~	Chips/Wafer
+	~		|
+
+Mirror Reflectivity=0.7
+	~	Dmnl
+	~		|
+
+Total Functional Chips= INTEG (Chip Production Rate,
+		0)
+	~	Chips
+	~		|
+
+Vibration Interference=RANDOM NORMAL(0, 0.2, 0.05, 0.05, 1)
+	~	Dmnl
+	~		|
+
+Yield Percentage=MAX(0, (Mirror Reflectivity - Vibration Interference))
+	~	Dmnl
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Wafer
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Wafer
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Wafer [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Wafer [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,100,2
+10,1,Total Functional Chips,418,160,60,26,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,2,Cumulative Defects,417,305,63,28,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,3,48,183,159,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,4,6,3,100,0,0,22,0,192,0,-1--1--1,,1|(231,159)|
+1,5,6,1,4,0,0,22,0,192,0,-1--1--1,,1|(319,159)|
+11,6,0,275,159,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,7,Chip Production Rate,275,193,60,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,8,48,176,307,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,9,11,8,100,0,0,22,0,192,0,-1--1--1,,1|(225,307)|
+1,10,11,2,4,0,0,22,0,192,0,-1--1--1,,1|(315,307)|
+11,11,0,270,307,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,12,Defect Generation Rate,270,341,61,26,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,13,Mirror Reflectivity,793,137,66,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,14,Vibration Interference,766,385,48,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,15,Yield Percentage,786,264,62,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,16,13,15,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,17,14,15,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,18,15,7,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,19,15,12,1,0,0,0,0,192,0,-1--1--1,,1|(552,373)|
+///---\\\
+:L<%^E!@
+5:Time
+19:100,0
+24:0
+25:0
+26:0
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Vensim Sans|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
